@@ -7,6 +7,8 @@ StartLimitIntervalSec=0
 
 [Service]
 WorkingDirectory=/root/covid19-id/
+StandardOutput=file:/var/log/covid19-id-api/std_logs.log
+StandardError=file:/var/log/covid19-id-api/err_logs.log
 Type=simple
 Restart=always
 RestartSec=1
